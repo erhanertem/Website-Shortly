@@ -13,6 +13,7 @@
 		/>
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Shortly</title>
+		<script src="js/script.js" defer></script>
 	</head>
 	<body>
 		<!-- Nav Section -->
@@ -90,7 +91,7 @@
 				<!-- Form -->
 				<form
 					id="link-form"
-					class="flex flex-col w-full p-10 -mt-20 space-y-4 bg-darkViolet rounded-lg md:flex-row md:space-y-0 md:space-x-3"
+					class="relative flex flex-col w-full p-10 -mt-20 space-y-4 bg-darkViolet rounded-lg md:flex-row md:space-y-0 md:space-x-3"
 				>
 					<input
 						type="text"
@@ -103,6 +104,11 @@
 					>
 						Shorten It!
 					</button>
+					<!-- Error Message -->
+					<div
+						id="err-msg"
+						class="absolute left-7 bottom-3 text-red text-sm italic"
+					></div>
 				</form>
 				<!-- Link #1 -->
 				<div
